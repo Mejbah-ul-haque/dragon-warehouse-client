@@ -24,7 +24,8 @@ const Header = () => {
 		</>
 	);
 	return (
-		<div className="navbar bg-base-100">
+		<div className=" bg-black">
+			<div className="container mx-auto navbar bg-base-100 bg-black text-white">
 			<div className="navbar-start">
 				<div className="dropdown">
 					<label tabIndex="0" className="btn btn-ghost lg:hidden">
@@ -45,18 +46,19 @@ const Header = () => {
 					</label>
 					<ul
 						tabIndex="0"
-						className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
+						className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box bg-black w-52"
 					>
 						{manuItems}
 					</ul>
 				</div>
-				<a className="btn btn-ghost normal-case text-xl">Dragon Warehouse</a>
+				<a className="btn btn-ghost normal-case text-2xl">Dragon Warehouse</a>
 			</div>
 			<div className="navbar-center hidden lg:flex">
 				<ul className="menu menu-horizontal p-0">
 					{manuItems}
 				</ul>
 			</div>
+		</div>
 		</div>
 	);
 };
