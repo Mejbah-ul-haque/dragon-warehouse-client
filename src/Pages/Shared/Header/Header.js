@@ -25,7 +25,7 @@ const Header = () => {
 	);
 	return (
 		<div className=" bg-black">
-			<div className="container mx-auto navbar bg-base-100 bg-black text-white">
+			<div className="container mx-auto navbar bg-black text-white">
 			<div className="navbar-start">
 				<div className="dropdown">
 					<label tabIndex="0" className="btn btn-ghost lg:hidden">
@@ -46,7 +46,7 @@ const Header = () => {
 					</label>
 					<ul
 						tabIndex="0"
-						className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box bg-black w-52"
+						className="menu menu-compact dropdown-content mt-3 p-2 shadow rounded-box bg-black w-52"
 					>
 						{manuItems}
 					</ul>
