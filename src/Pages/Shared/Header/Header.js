@@ -4,22 +4,22 @@ const Header = () => {
 	const manuItems = (
 		<>
 			<li>
-				<a>Manage Items</a>
+				<a className='hover:bg-slate-800'>Manage Items</a>
 			</li>
 			<li>
-				<a>Add Item</a>
+				<a className='hover:bg-slate-800'>Add Item</a>
 			</li>
 			<li>
-				<a>My Items</a>
+				<a className='hover:bg-slate-800'>My Items</a>
 			</li>
 			<li>
-				<a>Blog</a>
+				<a className='hover:bg-slate-800'>Blog</a>
 			</li>
 			<li>
-				<a>About</a>
+				<a className='hover:bg-slate-800'>About</a>
 			</li>
 			<li>
-				<a>Login</a>
+				<a className='hover:bg-slate-800'>Login</a>
 			</li>
 		</>
 	);

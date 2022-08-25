@@ -77,9 +77,11 @@ const Footer = () => {
 
                 </section>
                 <div style={{ height: '1px' }} className='bg-slate-300 mx-auto'></div>
-                <section className='container mx-auto text-center'>
-                    <img className='mb-2 mt-5' src={bankCard} alt="" />
-                    <p className='text-white text-center py-4 mb-0'><small> copyright &copy; {year} Atafal. All rights reserved.</small></p>
+                <section className='container mx-auto flex justify-center items-center pb-5 mt-16'>
+                    <div>
+                    <img className='ml-10' src={bankCard} alt="" />
+                    <p className='text-white text-center py-4 mb-0'><small> copyright &copy; {year} Dragon Warehouse. All rights reserved.</small></p>
+                    </div>
                 </section>
             </div>
         </footer>
