@@ -1,25 +1,26 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Header = () => {
-	const manuItems = (
+	const menuItems = (
 		<>
 			<li>
-				<a className='hover:bg-slate-800'>Manage Items</a>
+				<Link to="manageItems" className='hover:bg-slate-800'>Manage Items</Link>
 			</li>
 			<li>
-				<a className='hover:bg-slate-800'>Add Item</a>
+				<Link to="addItem" className='hover:bg-slate-800'>Add Item</Link>
 			</li>
 			<li>
-				<a className='hover:bg-slate-800'>My Items</a>
+				<Link to="myItems" className='hover:bg-slate-800'>My Items</Link>
 			</li>
 			<li>
-				<a className='hover:bg-slate-800'>Blog</a>
+				<Link to="blog" className='hover:bg-slate-800'>Blog</Link>
 			</li>
 			<li>
-				<a className='hover:bg-slate-800'>About</a>
+				<Link to="about" className='hover:bg-slate-800'>About</Link>
 			</li>
 			<li>
-				<a className='hover:bg-slate-800'>Login</a>
+				<Link to="login" className='hover:bg-slate-800'>Login</Link>
 			</li>
 		</>
 	);
@@ -48,14 +49,14 @@ const Header = () => {
 						tabIndex="0"
 						className="menu menu-compact dropdown-content mt-3 p-2 shadow rounded-box bg-black w-52"
 					>
-						{manuItems}
+						{menuItems}
 					</ul>
 				</div>
-				<a className="btn btn-ghost normal-case text-2xl">Dragon Warehouse</a>
+				<Link to="/" className="btn btn-ghost normal-case text-2xl">Dragon Warehouse</Link>
 			</div>
 			<div className="navbar-center hidden lg:flex">
 				<ul className="menu menu-horizontal p-0">
-					{manuItems}
+					{menuItems}
 				</ul>
 			</div>
 		</div>
