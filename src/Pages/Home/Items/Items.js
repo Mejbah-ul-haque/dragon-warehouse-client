@@ -14,18 +14,12 @@ const Items = () => {
 	return (
 		<div id="items" className="container mx-auto">
 			<p
-				style={{ backgroundColor: "#e2e2e2", margin: "40px 0" }}
-				className="w-50 f-block mx-auto"
+				
+				className="flex justify-center"
 			>
 				<button
 					onClick={navigateToManageInventories}
-					style={{
-						border: "2px solid #003366",
-						backgroundColor: "#003366",
-						color: "white",
-						borderRadius: "50px",
-					}}
-					className="btn d-block mx-auto mt-5 mb-4 px-3 py-2 border border-5 border-white fw-bold text-uppercase"
+					className="btn bg-[#003366] rounded-full text-xl font-bold text-uppercase mb-8 pb-10 p-5 mt-[-50px] z-10 border-2 border-[#e6e6e6]"
 				>
 					Manage Inventories
 				</button>
