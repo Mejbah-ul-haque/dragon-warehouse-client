@@ -13,22 +13,22 @@ const Special1 = () => {
 
             <div className="grid grid-cols-4 gap-4">
                 <div className="col-span-2">
-                    <img className='w-full border border-[#e6e6e6] opacity-90 hover:opacity-100' src={extra1} alt="" />
+                    <img className='w-full border border-[#dddddd] opacity-90 hover:opacity-100' src={extra1} alt="" />
                 </div>
                 <div className="">
-                    <img className='w-full border border-[#e6e6e6] opacity-90 hover:opacity-100' src={item13} alt="" />
+                    <img className='w-full border border-[#dddddd] opacity-90 hover:opacity-100' src={item13} alt="" />
                 </div>
                 <div className="">
-                    <img className='w-full border border-[#e6e6e6] opacity-90 hover:opacity-100' src={item18} alt="" />
+                    <img className='w-full border border-[#dddddd] opacity-90 hover:opacity-100' src={item18} alt="" />
                 </div>
                 <div className="">
-                    <img className='w-full border border-[#e6e6e6] opacity-90 hover:opacity-100' src={item19} alt="" />
+                    <img className='w-full border border-[#dddddd] opacity-90 hover:opacity-100' src={item19} alt="" />
                 </div>
                 <div className="">
-                    <img className='w-full border border-[#e6e6e6] opacity-90 hover:opacity-100' src={item20} alt="" />
+                    <img className='w-full border border-[#dddddd] opacity-90 hover:opacity-100' src={item20} alt="" />
                 </div>
                 <div className="col-span-2">
-                    <img className='w-full border border-[#e6e6e6] opacity-90 hover:opacity-100' src={extra2} alt="" />
+                    <img className='w-full border border-[#dddddd] opacity-90 hover:opacity-100' src={extra2} alt="" />
                 </div>
             </div>
         </div>
