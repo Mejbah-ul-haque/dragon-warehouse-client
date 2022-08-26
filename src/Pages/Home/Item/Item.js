@@ -7,10 +7,10 @@ const Item = ({ item }) => {
 
 
     return (
-        <div className="my-4">
-			<div className="card bg-base-100 my-xl h-[48rem] border">
+        <div className="my-4 ">
+			<div className="card bg-base-100 my-xl h-[48rem] border border-[#dddddd]">
 				<figure>
-					<img src={img} className="h-96" />
+					<img src={img} className="h-96 transform transition duration-1000 hover:scale-125" />
 				</figure>
 				<div className="card-body">
 					<h2 className="text-2xl text-center font-bold">
