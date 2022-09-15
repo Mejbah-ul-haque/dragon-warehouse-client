@@ -25,7 +25,7 @@ const Items = () => {
 				</button>
 			</p>
 			<ul>
-				<li className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+				<li className="grid md:grid-cols-2 xl:grid-cols-3 gap-4">
 					{items.slice(0, 6).map((item) => (
 						<Item key={item._id} item={item}></Item>
 					))}

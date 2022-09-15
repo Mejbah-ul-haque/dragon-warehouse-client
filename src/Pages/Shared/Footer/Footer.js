@@ -14,7 +14,7 @@ const Footer = () => {
             <div style={{ height: '50px', backgroundColor: 'lightgray' }}></div>
             <div style={{ backgroundColor: '#000000' }}>
                 <section className='container mx-auto'>
-                    <div className="grid md:grid-cols-3 gap-4 ">
+                    <div className="grid text-center md:grid-cols-3 gap-4 md:text-left">
                         <div className="">
                             <div style={{ height: '300px' }} className="text-white border border-slate-600 p-4 pt-5 text-slate-500 leading-10 text-xl">
                                 <h3  className='text-3xl text-slate-50'>contact us</h3>
@@ -63,12 +63,12 @@ const Footer = () => {
                             <p className='text-center'><small>the best electronics warehouse</small></p>
                             <p className='text-center'><small><em>" Your satisfaction is our main goal. "</em></small></p>
                         </div>
-                        <div className="divide-x text-center">
+                        <div className="border-x text-center">
                             <p className='mt-3'><Link className='text-decoration-none footer-link border rounded-full py-1 px-5' to="/laptop"><small> Laptop</small></Link></p>
                             <p className='my-5'><Link className='text-decoration-none footer-link border rounded-full py-1 px-5' to="/mobile"><small> Mobile</small></Link></p>
                             <p className='mt-3'><Link className='text-decoration-none footer-link border rounded-full py-1 px-5' to="/airPods"><small> AirPods</small></Link></p>
                         </div>
-                        <div className="divide-x text-center">
+                        <div className="text-center">
                             <p className='mt-3'><Link className='text-decoration-none footer-link border rounded-full py-1 px-8' to="/iron"><small> Iron </small></Link></p>
                             <p className='my-5'><Link className='text-decoration-none footer-link border rounded-full py-1 px-2' to="/watch"><small> SmartWatch </small></Link></p>
                             <p className='mt-3'><Link className=' border footer-link rounded-full py-1 px-6' to="/others"><small> Others</small></Link></p>

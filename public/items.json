@@ -21,15 +21,15 @@
         "description": "Very good quality fridge. The quality is much better than the price. It is very safe to keep food here. Stock limited. If you want to buy, come now.",
         "price": 300,
         "quantity": 40,
-        "supplierName": "Cameron White"
+        "supplierName": "Cam White"
     },
     {
-        "name": "Beats Solo3 Wireless On-Ear Headphones",
+        "name": "Solo3 Headphones",
         "img": "https://i.ibb.co/N6ZyP7C/item4.jpg",
         "description": "Get the most out of your music with these red Beats Solo3 headphones. Their on-ear design makes them really comfortable, and you won’t have any annoying cables to with since they connect wirelessly via Bluetooth. You’ll be totally focused on the music as noise-isolation blocks out any outside sounds, and you can crank up the volume or skip tracks using the handy on-ear controls. ",
         "price": 33,
         "quantity": 20,
-        "supplierName": "Stephen Augusta"
+        "supplierName": "Step Augusta"
     },
     {
         "name": "Apple iPhone 13",
@@ -40,7 +40,7 @@
         "supplierName": "Kyle Jarvis"
     },
     {
-        "name": "Steam Iron with Pivoting Cord",
+        "name": "Steam Iron",
         "img": "https://i.ibb.co/2sYT0DJ/item6.jpg",
         "description": "Nonstick Soleplate - The durable nonstick soleplate glides easily over all fabric types, taking care of wrinkles big and small Spray Mist Button - The push-button mister gently moistens fabrics to help smooth away deep wrinkles Lightweight Design - This compact iron is perfect for quick touchups, and it’s easy to store when the job is done",
         "price": 77,

@@ -4,7 +4,7 @@ import item16 from "../../../assets/Items/item16.jpg"
 const Special3 = () => {
 	return (
 		<div class="hero">
-			<div class="hero-content flex-col lg:flex-row-reverse">
+			<div class="hero-content flex-col lg:flex-row-reverse ">
 				<img
 					src={item16}
 					class="w-1/2 rounded-lg shadow-2xl"

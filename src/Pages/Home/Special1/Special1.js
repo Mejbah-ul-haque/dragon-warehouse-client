@@ -11,7 +11,7 @@ const Special1 = () => {
         <div className='container mx-auto mt-24'>
             
 
-            <div className="grid grid-cols-4 gap-4">
+            <div className="grid grid-cols-2 gap-4 xl:grid-cols-4">
                 <div className="transform col-span-2 transition duration-1000 hover:scale-105 z-30">
                     <img className='w-full border border-[#dddddd] opacity-90 hover:opacity-100' src={extra1} alt="" />
                 </div>
