@@ -12,23 +12,23 @@ const Special1 = () => {
             
 
             <div className="grid grid-cols-2 gap-4 xl:grid-cols-4">
-                <div className="transform col-span-2 transition duration-1000 hover:scale-105 z-30">
-                    <img className='w-full border border-[#dddddd] opacity-90 hover:opacity-100' src={extra1} alt="" />
+                <div className="col-span-2">
+                    <img className='w-full border border-[#dddddd] hover:opacity-80' src={extra1} alt="" />
                 </div>
                 <div className="transform transition duration-1000 hover:scale-110">
-                    <img className='w-full border border-[#dddddd] opacity-90 hover:opacity-100' src={item13} alt="" />
+                    <img className='w-full border border-[#dddddd] hover:opacity-80' src={item13} alt="" />
                 </div>
                 <div className="transform transition duration-1000 hover:scale-110">
-                    <img className='w-full border border-[#dddddd] opacity-90 hover:opacity-100' src={item18} alt="" />
+                    <img className='w-full border border-[#dddddd] hover:opacity-80' src={item18} alt="" />
                 </div>
                 <div className="transform transition duration-1000 hover:scale-110">
-                    <img className='w-full border border-[#dddddd] opacity-90 hover:opacity-100' src={item19} alt="" />
+                    <img className='w-full border border-[#dddddd] hover:opacity-80' src={item19} alt="" />
                 </div>
                 <div className="transform transition duration-1000 hover:scale-110">
-                    <img className='w-full border border-[#dddddd] opacity-90 hover:opacity-100' src={item20} alt="" />
+                    <img className='w-full border border-[#dddddd] hover:opacity-80' src={item20} alt="" />
                 </div>
-                <div className="col-span-2 transform transition duration-1000 hover:scale-105">
-                    <img className='w-full border border-[#dddddd] opacity-90 hover:opacity-100' src={extra2} alt="" />
+                <div className="col-span-2">
+                    <img className='w-full border border-[#dddddd] hover:opacity-80' src={extra2} alt="" />
                 </div>
             </div>
         </div>

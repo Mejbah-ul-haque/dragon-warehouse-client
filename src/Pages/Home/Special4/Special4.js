@@ -22,53 +22,53 @@ const Special4 = () => {
             
 
             <div className="grid grid-cols-2 gap-4 xl:grid-cols-4">
-                <div className="transform col-span-2 transition duration-1000 hover:scale-105 z-30">
-                    <img className='w-full border border-[#dddddd] opacity-90 hover:opacity-100' src={extra3} alt="" />
+                <div className="col-span-2 ">
+                    <img className='w-full border border-[#dddddd]  hover:opacity-80' src={extra3} alt="" />
                 </div>
-                <div className="col-span-2 transform transition duration-1000 hover:scale-105">
-                    <img className='w-full border border-[#dddddd] opacity-90 hover:opacity-100' src={extra4} alt="" />
+                <div className="col-span-2">
+                    <img className='w-full border border-[#dddddd] hover:opacity-80' src={extra4} alt="" />
                 </div>
-                <div className="transform col-span-2 transition duration-1000 hover:scale-105 z-30">
-                    <img className='w-full border border-[#dddddd] opacity-90 hover:opacity-100' src={extra1} alt="" />
+                <div className="col-span-2">
+                    <img className='w-full border border-[#dddddd] hover:opacity-80' src={extra1} alt="" />
                 </div>
-                <div className="col-span-2 transform transition duration-1000 hover:scale-105">
-                    <img className='w-full border border-[#dddddd] opacity-90 hover:opacity-100' src={extra2} alt="" />
+                <div className="col-span-2">
+                    <img className='w-full border border-[#dddddd] hover:opacity-80' src={extra2} alt="" />
                 </div>
-                <div className="transform transition duration-1000 hover:scale-110">
-                    <img className='w-full border border-[#dddddd] opacity-90 hover:opacity-100' src={item13} alt="" />
+                <div className="transform transition duration-1000 hover:scale-105">
+                    <img className='w-full border border-[#dddddd] hover:opacity-80' src={item13} alt="" />
                 </div>
-                <div className="transform transition duration-1000 hover:scale-110">
-                    <img className='w-full border border-[#dddddd] opacity-90 hover:opacity-100' src={item18} alt="" />
+                <div className="transform transition duration-1000 hover:scale-105">
+                    <img className='w-full border border-[#dddddd] hover:opacity-80' src={item18} alt="" />
                 </div>
-                <div className="transform transition duration-1000 hover:scale-110">
-                    <img className='w-full border border-[#dddddd] opacity-90 hover:opacity-100' src={item19} alt="" />
+                <div className="transform transition duration-1000 hover:scale-105">
+                    <img className='w-full border border-[#dddddd] hover:opacity-80' src={item19} alt="" />
                 </div>
-                <div className="transform transition duration-1000 hover:scale-110">
-                    <img className='w-full border border-[#dddddd] opacity-90 hover:opacity-100' src={item20} alt="" />
+                <div className="transform transition duration-1000 hover:scale-105">
+                    <img className='w-full border border-[#dddddd] hover:opacity-80' src={item20} alt="" />
                 </div>
-                <div className="transform transition duration-1000 hover:scale-110">
-                    <img className='w-full border border-[#dddddd] opacity-90 hover:opacity-100' src={item8} alt="" />
+                <div className="transform transition duration-1000 hover:scale-105">
+                    <img className='w-full border border-[#dddddd] hover:opacity-80' src={item8} alt="" />
                 </div>
-                <div className="transform transition duration-1000 hover:scale-110">
-                    <img className='w-full border border-[#dddddd] opacity-90 hover:opacity-100' src={item9} alt="" />
+                <div className="transform transition duration-1000 hover:scale-105">
+                    <img className='w-full border border-[#dddddd] hover:opacity-80' src={item9} alt="" />
                 </div>
-                <div className="transform transition duration-1000 hover:scale-110">
-                    <img className='w-full border border-[#dddddd] opacity-90 hover:opacity-100' src={item10} alt="" />
+                <div className="transform transition duration-1000 hover:scale-105">
+                    <img className='w-full border border-[#dddddd] hover:opacity-80' src={item10} alt="" />
                 </div>
-                <div className="transform transition duration-1000 hover:scale-110">
-                    <img className='w-full border border-[#dddddd] opacity-90 hover:opacity-100' src={item11} alt="" />
+                <div className="transform transition duration-1000 hover:scale-105">
+                    <img className='w-full border border-[#dddddd]  hover:opacity-80' src={item11} alt="" />
                 </div>
-                <div className="transform transition duration-1000 hover:scale-110">
-                    <img className='w-full border border-[#dddddd] opacity-90 hover:opacity-100' src={item12} alt="" />
+                <div className="transform transition duration-1000 hover:scale-105">
+                    <img className='w-full border border-[#dddddd] hover:opacity-80' src={item12} alt="" />
                 </div>
-                <div className="transform transition duration-1000 hover:scale-110">
-                    <img className='w-full border border-[#dddddd] opacity-90 hover:opacity-100' src={item14} alt="" />
+                <div className="transform transition duration-1000 hover:scale-105">
+                    <img className='w-full border border-[#dddddd] hover:opacity-80' src={item14} alt="" />
                 </div>
-                <div className="transform transition duration-1000 hover:scale-110">
-                    <img className='w-full border border-[#dddddd] opacity-90 hover:opacity-100' src={item15} alt="" />
+                <div className="transform transition duration-1000 hover:scale-105">
+                    <img className='w-full border border-[#dddddd] hover:opacity-80' src={item15} alt="" />
                 </div>
-                <div className="transform transition duration-1000 hover:scale-110">
-                    <img className='w-full border border-[#dddddd] opacity-90 hover:opacity-100' src={item17} alt="" />
+                <div className="transform transition duration-1000 hover:scale-105">
+                    <img className='w-full border border-[#dddddd]  hover:opacity-80' src={item17} alt="" />
                 </div>
                 
             </div>

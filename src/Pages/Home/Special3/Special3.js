@@ -3,14 +3,14 @@ import item16 from "../../../assets/Items/item16.jpg"
 
 const Special3 = () => {
 	return (
-		<div class="hero">
-			<div class="hero-content flex-col lg:flex-row-reverse ">
+		<div class="hero text-center md:text-left">
+			<div class="hero-content flex-col md:flex-row-reverse ">
 				<img
 					src={item16}
-					class="w-1/2 rounded-lg shadow-2xl"
+					class="w-full md:w-1/2 rounded-lg shadow-2xl"
 				/>
 				<div>
-					<h1 class="text-5xl font-bold">Box Office News!</h1>
+					<h1 class="text-3xl font-bold md:text-4xl">Box Office News!</h1>
 					<p class="py-6">
 						Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
 						excepturi exercitationem quasi. In deleniti eaque aut repudiandae et

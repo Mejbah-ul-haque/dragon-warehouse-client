@@ -46,7 +46,7 @@ const Footer = () => {
                             </div>
                         </div>
                         <div className="col-sm-12 col-md-4">
-                            <div style={{ height: '300px' }} className="text-white text-start border border-slate-600 leading-7  p-4 pt-5">
+                            <div style={{ height: '300px' }} className="text-white text-center md:text-start border border-slate-600 leading-7  p-4 pt-5">
                                 <h5 className='text-xl leading-10'>NEWSLETTER </h5>
                                 <p className='leading-10'><small>Sign up newsletter to receive special offers and exclusive news about Metros products</small> </p>
                                 <p><input className='w-full text-center p-2 text-black mt-4' type="btn" value="ENTER YOUR ADDRESS" /></p>
@@ -58,20 +58,24 @@ const Footer = () => {
                 </section>
                 <section className='container mx-auto my-10 text-center py-5'>
                     <div className="grid md:grid-cols-3 gap-4">
-                        <div className="text-white border-secondary leading-10">
+                        <div className="text-white border-r border-slate-600 leading-10">
                             <h1 className='text-center text-3xl font-bold my-2'>Dragon Warehouse</h1>
                             <p className='text-center'><small>the best electronics warehouse</small></p>
                             <p className='text-center'><small><em>" Your satisfaction is our main goal. "</em></small></p>
                         </div>
-                        <div className="border-x text-center">
-                            <p className='mt-3'><Link className='text-decoration-none footer-link border rounded-full py-1 px-5' to="/laptop"><small> Laptop</small></Link></p>
-                            <p className='my-5'><Link className='text-decoration-none footer-link border rounded-full py-1 px-5' to="/mobile"><small> Mobile</small></Link></p>
-                            <p className='mt-3'><Link className='text-decoration-none footer-link border rounded-full py-1 px-5' to="/airPods"><small> AirPods</small></Link></p>
+                        <div className="border-x border-slate-600">   
+                            <div className="text-center flex md:flex-col ">
+                                <p className='m-3'><Link className='text-decoration-none footer-link border rounded-full py-1 px-5' to="/laptop"><small> Laptop</small></Link></p>
+                                <p className='m-3'><Link className='text-decoration-none footer-link border rounded-full py-1 px-5' to="/mobile"><small> Mobile</small></Link></p>
+                                <p className='m-3'><Link className='text-decoration-none footer-link border rounded-full py-1 px-5' to="/airPods"><small> AirPods</small></Link></p>
+                            </div>
                         </div>
-                        <div className="text-center">
-                            <p className='mt-3'><Link className='text-decoration-none footer-link border rounded-full py-1 px-8' to="/iron"><small> Iron </small></Link></p>
-                            <p className='my-5'><Link className='text-decoration-none footer-link border rounded-full py-1 px-2' to="/watch"><small> SmartWatch </small></Link></p>
-                            <p className='mt-3'><Link className=' border footer-link rounded-full py-1 px-6' to="/others"><small> Others</small></Link></p>
+                        <div className="border-l border-slate-600">
+                            <div className=" text-center flex mx-auto md:flex-col">
+                                <p className='m-3'><Link className='text-decoration-none footer-link border rounded-full py-1 px-8' to="/iron"><small> Iron </small></Link></p>
+                                <p className='m-3'><Link className='text-decoration-none footer-link border rounded-full py-1 px-2' to="/watch"><small> SmartWatch </small></Link></p>
+                                <p className='m-3'><Link className=' border footer-link rounded-full py-1 px-6' to="/others"><small> Others</small></Link></p>
+                            </div>
                         </div>
                     </div>
 
