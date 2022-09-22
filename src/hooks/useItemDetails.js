@@ -1,10 +1,10 @@
 import { useEffect, useState } from "react"
 
 const useItemDetails = id => {
-    const [item, setItem] = useState({});
+    const [item, setItem] = useState([]);
 
     useEffect(() => {
-        const url = `https://salty-ocean-65045.herokuapp.com/item/${id}`;
+        const url = `http://localhost:4000/service/${id}`;
 
         fetch(url)
             .then(res => res.json())

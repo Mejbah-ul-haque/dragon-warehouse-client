@@ -16,7 +16,7 @@ const Item = ({ item }) => {
 					<h2 className="text-2xl text-center font-bold border-y-2 mb-4 py-2 hover:text-red-500">
 						{name}
 					</h2>
-					<p className="text-[#999999] text-center">{description.slice(0, 200)}</p>
+					<p className="text-[#999999] text-center">{description}</p>
 					<div className="card-actions text-center justify-between border-2 my-4 rounded-lg">
 						<p className="text-3xl  font-bold p-1">${price}</p>
 						<p className="text-lg border-x-2  bg-black text-white p-2">{supplierName}</p>
@@ -24,8 +24,9 @@ const Item = ({ item }) => {
 					</div>
 					
 					<div className="card-actions mx-auto">
-						<div className="font-bold border-2 px-14 py-2 hover:bg-black hover:text-white">UPDATE</div>
-						
+						<Link to={`/inventory/${item._id}`}>
+							<button className="font-bold border-2 px-14 py-2 hover:bg-black hover:text-white">UPDATE</button>
+						</Link>						
 					</div>
 				</div>
 			</div>
