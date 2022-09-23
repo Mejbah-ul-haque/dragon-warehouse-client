@@ -131,8 +131,8 @@ const Login = () => {
 					</form>
 					<p>
 						<small>
-							New to My Tools
-							<Link className="text-secondary" to="/signup">
+							New to My Dragon Warehouse
+							<Link className="text-blue-600" to="/signup">
 								{" "}
 								Create New Account
 							</Link>

@@ -49,10 +49,9 @@ const Signup = () => {
   // }
 
   const onSubmit = async (data) => {
-    console.log(data);
     await createUserWithEmailAndPassword(data.email, data.password);
     await updateProfile({ displayName: data.name });
-    
+    navigate("/");
   };
 
   return (
@@ -160,7 +159,7 @@ const Signup = () => {
           <p>
             <small>
               Already have an account
-              <Link className="text-secondary" to="/login">
+              <Link className="text-blue-600" to="/login">
                 {" "}
                 Please Login
               </Link>
