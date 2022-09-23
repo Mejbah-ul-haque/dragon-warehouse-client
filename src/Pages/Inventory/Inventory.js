@@ -73,7 +73,7 @@ const Inventory = () => {
 					className="bg-dark w-50 d-block mx-auto"
 				></div>
 				<p className="text-xl my-4">product informations</p>
-				<Link to="/">
+				<Link to="/inventories">
 					<button
 						style={{
 							margin: "5px 0",
