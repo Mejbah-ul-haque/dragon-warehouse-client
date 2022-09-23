@@ -5,6 +5,9 @@ const Header = () => {
 	const menuItems = (
 		<>
 			<li>
+				<Link to="inventories" className='hover:bg-slate-800'>Manage Inventories</Link>
+			</li>
+			<li>
 				<Link to="manageItems" className='hover:bg-slate-800'>Manage Items</Link>
 			</li>
 			<li>

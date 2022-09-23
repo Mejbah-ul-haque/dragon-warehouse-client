@@ -20,6 +20,48 @@ const Inventory = () => {
 				...itemDetail,
 				quantity: quantity-1	
 		})	
+		const url = `http://localhost:4000/service/${id}`;
+        fetch(url, {
+            method: 'PUT',
+            headers: {
+                'content-type': 'application/json'
+            },
+            body: JSON.stringify(quantity)
+        })
+            .then(res => res.json())
+            .then(data => {
+                console.log('success', data);
+                setItemDetail(data);
+            }).catch(err => {
+                console.log("Error Reading data " + err);
+            });
+	}
+	const handleToRestock = (event) => {
+		event.preventDefault();
+		const { quantity, ...rest } = itemDetail;
+		const previousQuantity = quantity;
+		const inputFieldQuantity = parseInt(event.target.inputQuantity.value);
+		setItemDetail({
+				...itemDetail,
+				quantity: quantity + inputFieldQuantity
+		})
+		// sent data to the server
+		const url = `hhttp://localhost:4000/service/${id}`;
+		fetch(url, {
+				method: 'PUT',
+				headers: {
+						'content-type': 'application/json'
+				},
+				body: JSON.stringify(quantity)
+		})
+				.then(res => res.json())
+				.then(data => {
+						console.log('success', data);
+						event.target.reset();
+				}).catch(err => {
+						console.log("Error Reading data " + err);
+				});
+		
 	}
 
 	return (
@@ -67,14 +109,21 @@ const Inventory = () => {
 									<p className="text-xl  p-2">ID: {id}</p>
 								</div>
 
-								<div className="card-actions mx-auto">
+								<div className="card-actions mx-auto justify-between">
+									
+										<form className='text-center flex border-2 rounded-lg my-3' onSubmit={handleToRestock}>
+                        <input className='font-bold px-16 py-3 uppercase rounded-lg hover:bg-black  hover:text-white' type="submit" value='Restock' />
+                        <input className='text-center font-bold border-l-2  py-3' type="number" name='inputQuantity' required />
+                    </form>
 								
-									<button onClick={handleToDelivered} className={`font-bold border-2 px-14 py-2 ${quantity > 0 ? " hover:bg-black hover:text-white" : "bg-red-600 text-white"}`}
+									<button onClick={handleToDelivered} className={`font-bold border-2 px-14 py-3 mt-3 rounded-lg ${quantity > 0 ? " hover:bg-black hover:text-white" : "bg-red-600 text-white"}`}
 									disabled={quantity === 0}
 									>
 											{quantity > 0 ? 'DELIVERED' : 'SOLD OUT'}
 										
 										</button>
+										
+										
 								
 								</div>
 							</div>
