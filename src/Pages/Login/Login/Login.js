@@ -31,7 +31,12 @@ const Login = () => {
 	let from = location.state?.from?.pathname || "/";
 	let signInError;
 
-	
+  useEffect(() => {
+		if (user || gUser) {
+			navigate(from, { replace: true });
+		}
+	}, [user, gUser, from, navigate]);
+  
 
 	if (loading || gLoading) {
 		return <Loading></Loading>;
@@ -45,9 +50,7 @@ const Login = () => {
 		);
 	}
   
-  if (user || gUser) {
-    navigate(from, { replace: true });
-  }
+ 
   
 	const onSubmit = (data) => {
 		console.log(data);
