@@ -2,9 +2,16 @@ import React from 'react';
 
 const NotFound = () => {
   return (
-    <div>
-      <h2>This is not found</h2>
-    </div>
+    <div className="container mx-auto text-center">
+			<div className="text-center">
+				<div className="m-5 grid justify-content items-center">
+					<img
+						className="img-fluid"
+						src={require("../../assets/NotFound/notFound.png")}
+					/>
+				</div>
+			</div>
+		</div>
   );
 };
 
