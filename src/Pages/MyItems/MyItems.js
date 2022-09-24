@@ -12,7 +12,8 @@ const MyItems = () => {
     axios.get("/service", {headers:{email:user.email}}).then(res=>setService(res.data));
   }, [])
   return (
-    <div className='container mx-auto'>
+    <div className='bg-slate-100'>
+      <div className='container mx-auto '>
       <h2>My Items page{service.length}</h2>
       
       <ul>
@@ -22,6 +23,7 @@ const MyItems = () => {
 					))}
 				</li>
 			</ul>
+    </div>
     </div>
   );
 };

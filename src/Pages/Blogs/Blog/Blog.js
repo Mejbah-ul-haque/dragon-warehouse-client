@@ -6,9 +6,9 @@ import './Blog.css';
 
 const Blog = () => {
     return (
-        <div style={{ minHeight: '100vh' }}>
+        <div style={{ minHeight: '100vh' }} className="bg-blue-100">
             {/* <PageTitle title='Blog'></PageTitle> */}
-            <div className='pt-4 bg-white text-center'>
+            <div className='pt-4 bg-blue-100 text-center'>
                 <h3 className='text-4xl font-bold text-slate-500 uppercase'>Programing <span className='font-bold text-5xl text-green-500'>Q/A</span> </h3>
                 <div style={{ height: '1px' }} className='bg-slate-600 w-50 my-10 block mx-auto'></div>
                 <h2 className='text-center uppercase text-2xl mt-10 mb-20'><span style={{ color: 'white', borderRadius: '50px', border: '2px solid #003366', backgroundColor: '#003366' }} className='py-2 px-5'>Dragon Warehouse Blog</span></h2>
@@ -16,7 +16,7 @@ const Blog = () => {
             <div className="container mx-auto">
                 <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
                     <div className="col">
-                        <div className="card h-100 blog-card">
+                        <div className="card h-100 blog-card shadow-2xl">
                             <div className='blog-q'>
                                 <h5>Difference between Javascript and Node.js?</h5>
                             </div>
@@ -30,7 +30,7 @@ const Blog = () => {
                         </div>
                     </div>
                     <div className="col">
-                        <div className="card h-100 blog-card">
+                        <div className="card h-100 blog-card shadow-2xl">
                             <div className='blog-q'>
                                 <h5>When should you use Node when should you use Mongodb?</h5>
                             </div>
@@ -44,7 +44,7 @@ const Blog = () => {
                         </div>
                     </div>
                     <div className="col">
-                        <div className="card h-100 blog-card">
+                        <div className="card h-100 blog-card shadow-2xl">
                             <div className='blog-q'>
                                 <h5>What is the different between SQL and noSQL?</h5>
                             </div>
@@ -58,7 +58,7 @@ const Blog = () => {
                         </div>
                     </div>
                     <div className="col">
-                        <div className="card h-100 blog-card">
+                        <div className="card h-100 blog-card shadow-2xl">
                             <div className='blog-q'>
                                 <h5>What is the purpose of jwt and how does it use?</h5>
                             </div>

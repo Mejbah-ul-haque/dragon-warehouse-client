@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const Answer1 = () => {
     return (
         <>
-            <div className='py-10 bg-white text-center'>
+            <div className='py-10 bg-white text-center shadow-2xl'>
                 <h3 className='text-3xl font-bold'>What is the Difference between Javascript and Node.js?</h3>
                 <div style={{ height: '1px' }} className='bg-slate-400 my-5 block mx-auto'></div>
                 <Link to='/blog'>
