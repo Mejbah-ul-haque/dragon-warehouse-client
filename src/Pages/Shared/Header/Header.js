@@ -15,16 +15,24 @@ const Header = () => {
 	const menuItems = (
 		<>
 			<li>
-				<Link to="inventories" className='hover:bg-slate-800'>Manage Inventories</Link>
+				{ 
+					user && <li><Link to="inventories" className='hover:bg-slate-800'>Manage Inventories</Link></li>
+				}
 			</li>
 			<li>
-				<Link to="manageItems" className='hover:bg-slate-800'>Manage Items</Link>
+				{ 
+					user && <li><Link to="manageItems" className='hover:bg-slate-800'>Manage Items</Link></li>
+				}
 			</li>
 			<li>
-				<Link to="addItem" className='hover:bg-slate-800'>Add Item</Link>
+				{ 
+					user && <li><Link to="addItem" className='hover:bg-slate-800'>Add Item</Link></li>
+				}
 			</li>
 			<li>
-				<Link to="myItems" className='hover:bg-slate-800'>My Items</Link>
+				{ 
+					user && <li><Link to="myItems" className='hover:bg-slate-800'>My Items</Link></li>
+				}
 			</li>
 			<li>
 				<Link to="blog" className='hover:bg-slate-800'>Blog</Link>
@@ -33,7 +41,7 @@ const Header = () => {
 				<Link to="about" className='hover:bg-slate-800'>About</Link>
 			</li>
 			<li>
-				{user ? <button className="btn btn-ghost"onClick={logout}>Sign Out</button> : <Link to="login" className='hover:bg-slate-800'>Login</Link>}
+				{user ? <li><button className="btn btn-ghost"onClick={logout}>Sign Out</button></li> : <Link to="login" className='hover:bg-slate-800'>Login</Link>}
 			</li>
 		</>
 	);
