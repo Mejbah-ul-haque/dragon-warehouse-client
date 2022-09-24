@@ -21,11 +21,6 @@ const Header = () => {
 			</li>
 			<li>
 				{ 
-					user && <li><Link to="manageItems" className='hover:bg-slate-800'>Manage Items</Link></li>
-				}
-			</li>
-			<li>
-				{ 
 					user && <li><Link to="addItem" className='hover:bg-slate-800'>Add Item</Link></li>
 				}
 			</li>

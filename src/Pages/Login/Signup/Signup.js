@@ -55,19 +55,19 @@ const Signup = () => {
   };
 
   return (
-    <div className="flex h-screen justify-center items-center">
-      <div className="card w-96 bg-base-100 shadow-xl">
-        <div className="card-body">
+    <div className="flex h-screen justify-center items-center bg-yellow-100">
+      <div className="card  w-96 bg-base-100 shadow-xl">
+        <div className="card-body ">
           <h2 className="text-center text-2xl font-bold">Sign Up</h2>
           <form onSubmit={handleSubmit(onSubmit)}>
-            <div className="form-control w-full max-w-xs">
+            <div className="form-control w-full max-w-xs ">
               <label className="label">
                 <span className="label-text">Name</span>
               </label>
               <input
                 type="text"
                 placeholder="Your Name"
-                className="input input-bordered w-full max-w-xs"
+                className="input input-bordered w-full max-w-xs border-yellow-400"
                 {...register("name", {
                   required: {
                     value: true,
@@ -90,7 +90,7 @@ const Signup = () => {
               <input
                 type="email"
                 placeholder="Your email address"
-                className="input input-bordered w-full max-w-xs"
+                className="input input-bordered w-full max-w-xs border-yellow-400"
                 {...register("email", {
                   required: {
                     value: true,
@@ -122,7 +122,7 @@ const Signup = () => {
               <input
                 type="password"
                 placeholder="Your Password"
-                className="input input-bordered w-full max-w-xs"
+                className="input input-bordered w-full max-w-xs border-yellow-400"
                 {...register("password", {
                   required: {
                     value: true,
@@ -151,7 +151,7 @@ const Signup = () => {
             {signInError}
 
             <input
-              className="btn w-full max-w-xs"
+              className="btn w-full max-w-xs bg-yellow-600 text-black border-yellow-600 hover:bg-yellow-400 hover:border-yellow-400"
               type="submit"
               value="Sign Up"
             />
@@ -168,7 +168,7 @@ const Signup = () => {
           <div className="divider">OR</div>
           <button
             onClick={() => signInWithGoogle()}
-            className="btn btn-outline"
+            className="btn btn-outline btn-warning"
           >
             Continue with Google
           </button>

@@ -1,12 +1,10 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React from 'react';
+import { Link } from 'react-router-dom';
 
-const Item = ({ item }) => {
-	const { _id, name, img, description, price, supplierName, quantity } = item;
-	// console.log(typeof quantity);
-
-	return (
-		<div className="my-4">
+const MyItemsDetail = ({service}) => {
+  const { _id, name, img, description, price, supplierName, quantity } = service;
+  return (
+    <div className="my-4">
 			<div className="card bg-base-100 my-xl h-[48rem] border border-[#dddddd] ">
 				<figure>
 					<img
@@ -30,7 +28,7 @@ const Item = ({ item }) => {
 					</div>
 
 					<div className="card-actions mx-auto">
-						<Link to={`/inventory/${item._id}`}>
+						<Link to={`/inventory/${service._id}`}>
 							<button className="font-bold border-2 px-14 py-2 hover:bg-black hover:text-white">
 								UPDATE
 							</button>
@@ -39,7 +37,7 @@ const Item = ({ item }) => {
 				</div>
 			</div>
 		</div>
-	);
+  );
 };
 
-export default Item;
+export default MyItemsDetail;

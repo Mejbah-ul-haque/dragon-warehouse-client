@@ -35,13 +35,13 @@ const AddItem = () => {
 					<form onSubmit={handleSubmit(onSubmit)}>
 						<div className="form-control w-full max-w-xs">
 							<label className="label">
-								<span className="label-text">Name</span>
+								<span className="label-text">Name of Item</span>
 							</label>
 							<input
 								type="text"
-								placeholder="Name"
+								placeholder="Name of Item"
 								className="input input-bordered w-full max-w-xs"
-								{...register("name", { required: true, maxLength: 20 })}
+								{...register("name", { required: true, maxLength: 50 })}
 							/>
 						</div>
 						<div className="form-control w-full max-w-xs">
@@ -68,13 +68,24 @@ const AddItem = () => {
 						</div>
 						<div className="form-control w-full max-w-xs">
 							<label className="label">
-								<span className="label-text">Qty</span>
+								<span className="label-text">Quantity</span>
 							</label>
 							<input
 								type="number"
 								placeholder="Quantity"
 								className="input input-bordered w-full max-w-xs"
 								{...register("quantity")}
+							/>
+						</div>
+						<div className="form-control w-full max-w-xs">
+							<label className="label">
+								<span className="label-text">Supplier Name</span>
+							</label>
+							<input
+								type="text"
+								placeholder="Supplier Name"
+								className="input input-bordered w-full max-w-xs"
+								{...register("supplierName", { required: true, maxLength: 30 })}
 							/>
 						</div>
 						<div className="form-control w-full max-w-xs">
