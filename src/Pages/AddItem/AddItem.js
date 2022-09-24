@@ -1,12 +1,17 @@
 import React from "react";
 import { useForm } from "react-hook-form";
 import axios from "axios";
+import auth from "../../firebase.init";
+import { useAuthState } from "react-firebase-hooks/auth";
 const AddItem = () => {
 	const { register, handleSubmit } = useForm();
-
+	
+	const [user, loading, error] = useAuthState(auth);
+	
+	console.log(user);
 	const onSubmit = (data) => {
-		console.log(data);
-		axios.post("/service", data).then(res=>console.log(res.data))
+		data.user = user.email;
+		axios.post("/service", data).then(res=>console.log(res.data)).catch(error => console.log(error));
 		
 		// const url = `http://localhost:4000/service`;
 		// fetch(url, {

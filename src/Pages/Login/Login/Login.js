@@ -1,6 +1,3 @@
-
-
-
 import React, { useEffect } from "react";
 import auth from "../../../firebase.init";
 import {
@@ -24,7 +21,7 @@ const Login = () => {
 	const [signInWithEmailAndPassword, user, loading, error] =
 		useSignInWithEmailAndPassword(auth);
 
-
+	
 
 	const navigate = useNavigate();
 	const location = useLocation();
@@ -53,7 +50,6 @@ const Login = () => {
  
   
 	const onSubmit = (data) => {
-		console.log(data);
 		signInWithEmailAndPassword(data.email, data.password);
 	};
 

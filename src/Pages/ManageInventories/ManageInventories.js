@@ -3,7 +3,7 @@ import useItems from "../../hooks/useItems";
 import InventoryRow from "./inventoryRow";
 
 const ManageInventories = () => {
-  const [deletingProduct, setDeletingProduct] = useState(null);
+  // const [deletingProduct, setDeletingProduct] = useState(null);
   
 	const [items] = useItems([]);
 
@@ -25,7 +25,7 @@ const ManageInventories = () => {
 					</thead>
 					<tbody>
 						{
-              items?.map((product, index) =><InventoryRow key={product._id} index={index} product={product} setDeletingProduct={setDeletingProduct}></InventoryRow>)
+              items?.map((product, index) =><InventoryRow key={product._id} index={index} product={product}></InventoryRow>)
             }
 					</tbody>
 				</table>

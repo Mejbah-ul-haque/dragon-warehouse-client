@@ -1,8 +1,13 @@
+import axios from "axios";
 import React from "react";
 // import { toast } from "react-toastify";
 
-const InventoryRow = ({ product, index, setDeletingProduct }) => {
-	const { name, quantity, price, img, id } = product;
+const InventoryRow = ({ product, index }) => {
+	const { name, quantity, price, img, _id } = product;
+	
+	const handleDeletingProduct = ()=>{
+		axios.delete(`/service/${_id}`);
+	}
 
 	return (
 		<tr className="">
@@ -18,7 +23,7 @@ const InventoryRow = ({ product, index, setDeletingProduct }) => {
 			<td>{quantity}</td>
 			<td>{price}</td>
 			<td>
-				<label onClick={() => setDeletingProduct(product)} htmlFor="delete-confirm-modal" className="btn btn-error btn-outline btn-xs">
+				<label onClick={handleDeletingProduct} htmlFor="delete-confirm-modal" className="btn btn-error btn-outline btn-xs">
 					Delete
 				</label>
 				
