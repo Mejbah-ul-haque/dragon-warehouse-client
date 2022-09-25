@@ -17,55 +17,20 @@ const Inventory = () => {
 			setItemDetail(res.data)
 			setLoading(false)
 		});
-		// fetch(`http://localhost:4000/service/${id}`)
-			// .then((res) => res.json())
-			// .then((data) => setItemDetail(data));
 	}, [id, loading]);
 	
 	
-	const handleToDelivered = () => {
-		// setItemDetail({
-		// 		...itemDetail,
-		// 		quantity: quantity-1	
-		// })	
+	const handleToDelivered = () => {	
 		axios.put(`/service/${id}`, {quantity : itemDetail.quantity-1}).then(res => setLoading(true));
 	}
 	const handleToRestock = (event) => {
 		event.preventDefault();
-		// const { quantity, ...rest } = itemDetail;
-		// const previousQuantity = quantity;
 		const inputFieldQuantity = parseInt(event.target.inputQuantity.value);
 		
 		axios.put(`/service/${id}`, {quantity : itemDetail.quantity+inputFieldQuantity}).then(res => setLoading(true));
 		
-		// setItemDetail({
-		// 		...itemDetail,
-		// 		quantity: quantity + inputFieldQuantity
-		// })
-		
-		// sent data to the server
-		// const url = `hhttp://localhost:4000/service/${id}`;
-		// fetch(url, {
-		// 		method: 'PUT',
-		// 		headers: {
-		// 				'content-type': 'application/json'
-		// 		},
-		// 		body: JSON.stringify({itemDetail})
-		// })
-		// 		.then(res => res.json())
-		// 		.then(data => {
-		// 				console.log('success', data);
-		// 				event.target.reset();
-		// 		}).catch(err => {
-		// 				console.log("Error Reading data " + err);
-		// 		});
-		
 	}
 
-	
-	// if (loading) {
-  //   return <Loading></Loading>;
-  // }
 	return (
 		<>
 			<div className="py-4 bg-slate-200 text-center">

@@ -13,7 +13,7 @@ const AddItem = () => {
 		data.user = user.email;
 		axios.post("/service", data).then(res=>console.log(res.data)).catch(error => console.log(error));
 		
-		// const url = `http://localhost:4000/service`;
+		// const url = `https://evening-dawn-30046.herokuapp.com//service`;
 		// fetch(url, {
 		// 	method: "POST",
 		// 	headers: {
