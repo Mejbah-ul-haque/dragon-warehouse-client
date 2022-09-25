@@ -2,11 +2,11 @@ import axios from "axios";
 import React from "react";
 // import { toast } from "react-toastify";
 
-const InventoryRow = ({ product, index }) => {
+const InventoryRow = ({ product, index, setLoading }) => {
 	const { name, quantity, price, img, _id } = product;
 	
 	const handleDeletingProduct = ()=>{
-		axios.delete(`/service/${_id}`);
+		axios.delete(`/service/${_id}`).then(res=>setLoading(true));
 	}
 
 	return (

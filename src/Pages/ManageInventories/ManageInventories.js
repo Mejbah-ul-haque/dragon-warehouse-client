@@ -1,11 +1,28 @@
-import React, { useState } from "react";
+import axios from "axios";
+import React, { useEffect, useState } from "react";
 import useItems from "../../hooks/useItems";
 import InventoryRow from "./inventoryRow";
 
 const ManageInventories = () => {
 	// const [deletingProduct, setDeletingProduct] = useState(null);
+	
+	const [items, setItems] = useState([]);
+	const [loading, setLoading] = useState(true);
+	
+	useEffect(() => {
+		axios.get("/service").then(res=> {
+			setLoading(false);
+			setItems(res.data)
+		});
+			// fetch('http://localhost:4000/service')
+			// 		.then(res => res.json())
+			// 		.then(data => setItems(data));
+	}, [loading]);
 
-	const [items] = useItems([]);
+	// return [items, setItems]
+	
+
+	// const [items] = useItems([]);
 
 	return (
 		<div className="bg-red-50 ">
@@ -31,6 +48,8 @@ const ManageInventories = () => {
 									key={product._id}
 									index={index}
 									product={product}
+									setLoading={setLoading}
+									
 								></InventoryRow>
 							))}
 						</tbody>
