@@ -5,7 +5,7 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter } from "react-router-dom";
 import axios from "axios";
-axios.defaults.baseURL = "https://evening-dawn-30046.herokuapp.com/";
+axios.defaults.baseURL = "https://quiet-ravine-29448.herokuapp.com";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
