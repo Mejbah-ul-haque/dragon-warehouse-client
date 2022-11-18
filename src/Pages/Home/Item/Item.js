@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import "./Item.css"
 
 const Item = ({ item }) => {
 	const { _id, name, img, description, price, supplierName, quantity } = item;
@@ -16,15 +17,15 @@ const Item = ({ item }) => {
 				</figure>
 				<div className="card-body">
 					<h2 className="text-2xl text-center font-bold border-y-2 mb-4 py-2 hover:text-red-500">
-						{name}
+						{name.slice(0,19)}
 					</h2>
 					<p className="text-[#999999] text-center">
-						{description.slice(0, 180)}
+						{description.slice(0, 170)}
 					</p>
 					<div className="card-actions text-center justify-between border-2 my-4 rounded-lg">
-						<p className="text-3xl  font-bold p-1">${price}</p>
+						<p className="text-2xl  font-bold p-1">${price}</p>
 						<p className="text-lg border-x-2  bg-black text-white p-2">
-							{supplierName}
+							<small>{supplierName}</small>
 						</p>
 						<p className="text-xl  p-2">Qty: {quantity}</p>
 					</div>

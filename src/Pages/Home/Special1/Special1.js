@@ -5,6 +5,7 @@ import item13 from '../../../assets/Items/item13.jpg';
 import item18 from '../../../assets/Items/item18.jpg';
 import item19 from '../../../assets/Items/item19.jpg';
 import item20 from '../../../assets/Items/item20.jpg';
+import "./Special1.css";
 
 const Special1 = () => {
     return (
@@ -12,23 +13,23 @@ const Special1 = () => {
             
 
             <div className="grid grid-cols-2 gap-4 xl:grid-cols-4">
+                <div className="col-span-2 ">
+                    <img className='card-shadow w-full ' src={extra1} alt="" />
+                </div>
+                <div className=" transform transition duration-1000 ">
+                    <img className='card-shadow w-full border border-[#dddddd]' src={item13} alt="" />
+                </div>
+                <div className="transform transition duration-1000">
+                    <img className='card-shadow w-full border border-[#dddddd] ' src={item18} alt="" />
+                </div>
+                <div className="transform transition duration-1000">
+                    <img className='card-shadow w-full border border-[#dddddd] ' src={item19} alt="" />
+                </div>
+                <div className="transform transition duration-1000">
+                    <img className='card-shadow w-full border border-[#dddddd]' src={item20} alt="" />
+                </div>
                 <div className="col-span-2">
-                    <img className='w-full border border-[#dddddd] hover:opacity-80' src={extra1} alt="" />
-                </div>
-                <div className="transform transition duration-1000 hover:scale-110">
-                    <img className='w-full border border-[#dddddd] hover:opacity-80' src={item13} alt="" />
-                </div>
-                <div className="transform transition duration-1000 hover:scale-110">
-                    <img className='w-full border border-[#dddddd] hover:opacity-80' src={item18} alt="" />
-                </div>
-                <div className="transform transition duration-1000 hover:scale-110">
-                    <img className='w-full border border-[#dddddd] hover:opacity-80' src={item19} alt="" />
-                </div>
-                <div className="transform transition duration-1000 hover:scale-110">
-                    <img className='w-full border border-[#dddddd] hover:opacity-80' src={item20} alt="" />
-                </div>
-                <div className="col-span-2">
-                    <img className='w-full border border-[#dddddd] hover:opacity-80' src={extra2} alt="" />
+                    <img className='card-shadow w-full border border-[#dddddd] ' src={extra2} alt="" />
                 </div>
             </div>
         </div>
